@@ -70,3 +70,10 @@ footer.site .spacer { flex: 1; }
   nav { gap: 12px; }
   table.credits th { white-space: normal; }
 }
+
+/* donate.html：两张收款码并排，窄屏上下排 */
+.donate { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin: 22px 0; }
+.donate .card { margin: 0; text-align: center; }
+.donate img { width: 100%; max-width: 280px; height: auto; border-radius: 10px; background: #fff; }
+.donate h3 { margin-top: 4px; }
+@media (max-width: 520px) { .donate { grid-template-columns: 1fr; } }
